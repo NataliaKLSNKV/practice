@@ -82,7 +82,7 @@ public:
          year;
     }
 };
- Vector{
+class Vector{
     int module;
     double x1,x2,y1,y2;
 public:
@@ -99,7 +99,7 @@ public:
         return sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2));
     }
 };
- Librar{
+class Librar{
  string city,country,street;
     int countBooks;
  vector<Book> books;
@@ -134,6 +134,6 @@ public:
 };
 int main(int argc, const char * argv[]) {
  Book myBook("Wind","Bethoven");
- cout << myBook.getName() <<  ' << myBook.getAuthor() << endl;
+ cout << myBook.getName() << " " << myBook.getAuthor() << endl;
     return 0;
 }
