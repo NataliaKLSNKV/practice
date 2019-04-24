@@ -4,7 +4,7 @@
 
 using namespace std;
 ///Вариант 2
- Expression{
+class Expression{
 public:
     virtual void print() = 0;
     virtual int calc(int a) = 0;
@@ -12,7 +12,7 @@ public:
     virtual Expression* copy() = 0;
 };
 
- Constant:Expression{
+class Constant:Expression{
     int value;
 public:
     Constant(int a):value(a){}
@@ -31,7 +31,7 @@ public:
     }
 };
 
- Variable:Expression{
+class Variable:Expression{
     int value;
 public:
     Variable(int a):value(a){}
@@ -69,7 +69,7 @@ public:
     }
 };
 
- Difference:Expression{
+class Difference:Expression{
     int value;
 public:
     Difference(int a):value(a){}
@@ -107,7 +107,7 @@ public:
     }
 };
 
- Division:Expression{
+class Division:Expression{
     int value;
 public:
     Division(int a):value(a){}
