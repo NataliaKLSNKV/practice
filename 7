@@ -5,9 +5,9 @@ using namespace std;
 //Вариант 1
 class Animal{
 protected:
-    string name;
-    int paws;
-    int years;
+    string a;
+    int b;
+    int c;
 public:
     virtual void abstract() = 0;
 };
@@ -30,8 +30,8 @@ public:
 
 class Figure{
 protected:
-    double square;
-    int cntAngle;
+    double d;
+    int e;
 public:
     virtual double calcSquare() = 0;
 };
@@ -53,8 +53,8 @@ public:
 //Вариант 3
 class Vehicle{
 protected:
-    string carNumber;
-    string model;
+    string q;
+    string w;
 public:
     virtual double calcFuel() = 0;
 };
@@ -78,8 +78,8 @@ public:
 
 class Computer{
 protected:
-    string model;
-    string processor;
+    string e;
+    string r;
 public:
     virtual void printModel() = 0;
 };
@@ -107,13 +107,13 @@ public:
 class Desktop:Computer,Keyboard{
 public:
     Desktop(string modl,string proc,string lang,string br){
-        this->model = modl;
-        this->processor = proc;
+        this->e = modl;
+        this->r = proc;
         this->language = lang;
         this->brand = br;
     }
     virtual void printModel(){
-        cout << model << endl;
+        cout << e << endl;
     }
     virtual void printBrand(){
         cout << brand << endl;
