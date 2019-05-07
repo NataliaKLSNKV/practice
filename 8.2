@@ -1,0 +1,16 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+setlocale(LC_ALL, "Russian");
+ofstream file("file.txt");
+string a;
+cout<<"Введите текст:"<<endl;
+getline(cin, a);
+file << a;
+file.close();
+system("pause");
+return 0;
+}
